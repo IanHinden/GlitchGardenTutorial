@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4354278473635107942}
   - component: {fileID: 6379988458872556144}
+  - component: {fileID: 7486461273310227005}
+  - component: {fileID: 1854667706}
+  - component: {fileID: -1825333025170690700}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -45,6 +48,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starCost: 100
+--- !u!114 &7486461273310227005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4354278473635107945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8260b5fb43d162941ab9e3921694537a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 6341807256730826023, guid: a7aa7e6bf17d10e48bd74f4b28621928,
+    type: 3}
+  gun: {fileID: 5476186457700595687}
+--- !u!114 &1854667706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4354278473635107945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8260b5fb43d162941ab9e3921694537a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 6341807256730826023, guid: a7aa7e6bf17d10e48bd74f4b28621928,
+    type: 3}
+  gun: {fileID: 5476186457700595687}
+--- !u!95 &-1825333025170690700
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4354278473635107945}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b26be650ca48d6c479ddcc28a55ca519, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4354278473773170215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -117,6 +169,12 @@ PrefabInstance:
 --- !u!4 &5476186457995309737 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8616181731914697870, guid: 8b56c97c5685c5f409d0dd87b133c820,
+    type: 3}
+  m_PrefabInstance: {fileID: 4354278473773170215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5476186457700595687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8616181729942391232, guid: 8b56c97c5685c5f409d0dd87b133c820,
     type: 3}
   m_PrefabInstance: {fileID: 4354278473773170215}
   m_PrefabAsset: {fileID: 0}
