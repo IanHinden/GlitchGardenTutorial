@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    int numberOfAttackers = 0;
+    bool levelTimerFinished = false;
+
+    public void AttackerSpawned()
     {
-        
+        numberOfAttackers++;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AttackerKilled()
     {
-        
+        numberOfAttackers--;
+        if (numberOfAttackers <= 0 && levelTimerFinished)
+        {
+            Debug.Log("End level now");
+        }
+    }
+
+    public void LevelTimerFinished()
+    {
+        levelTimerFinished = true;
+        StopSpawners();
+    }
+
+    private void StopSpawners()
+    {
+        AttackerSpawner[] spawnerArray = FindObjectsOfType<AttackerSpawner>();
+        foreach(AttackerSpawner spawner in spawnerArray)
+        {
+            spawner.StopSpawning();
+        }
     }
 }

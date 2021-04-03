@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4354278473635107942}
   - component: {fileID: 6379988458872556144}
   - component: {fileID: 7486461273310227005}
-  - component: {fileID: 1854667706}
   - component: {fileID: -1825333025170690700}
   - component: {fileID: 767521278}
   - component: {fileID: 532170198963810396}
@@ -52,21 +51,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starCost: 50
 --- !u!114 &7486461273310227005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4354278473635107945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8260b5fb43d162941ab9e3921694537a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 6341807256730826023, guid: a7aa7e6bf17d10e48bd74f4b28621928,
-    type: 3}
-  gun: {fileID: 5476186457700595687}
---- !u!114 &1854667706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
